@@ -34,9 +34,9 @@ conversions_dict = {
     'ReRa': lambda temp: (temp * 1.25 + 273.15) * 1.8,
 }
 
-temp = float(values.split(' ')[0])
+tempo = float(values.split(' ')[0])
 original_unit = values.split(' ')[1]
 
 for unit in units:
     if original_unit != unit:
-        print("%.3f" % conversions_dict[original_unit+unit](temp), unit)
+        print("%.3f" % conversions_dict[original_unit+unit](tempo), unit)
